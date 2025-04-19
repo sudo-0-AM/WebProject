@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PTSC Programming Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <a href="#" class="logo">
+                    <i class="fas fa-code"></i>
+                    <span>PTSC</span>
+                </a>
+                
+                <div class="desktop-nav">
+                    <ul class="nav-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <a href="#join" class="btn btn-primary">Join Us</a>
+                    <button id="theme-toggle" class="btn-icon">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+                
+                <div class="mobile-nav-toggle">
+                    <button id="theme-toggle-mobile" class="btn-icon">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button id="menu-toggle" class="btn-icon">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Navigation Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="container">
+            <ul class="mobile-nav-links">
+                <li><a href="#home" class="mobile-nav-link">Home</a></li>
+                <li><a href="#about" class="mobile-nav-link">About</a></li>
+                <li><a href="#team" class="mobile-nav-link">Team</a></li>
+                <li><a href="#events" class="mobile-nav-link">Events</a></li>
+                <li><a href="#resources" class="mobile-nav-link">Resources</a></li>
+                <li><a href="#gallery" class="mobile-nav-link">Gallery</a></li>
+                <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+                <li><a href="#join" class="mobile-nav-link highlight">Join Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1>PROGRAMMING AND TECH SKILLS CLUB</h1>
+                    <p class="tagline">Where Coding Meets Creativity</p>
+                    <p class="description">
+                        Join a community of passionate programmers, developers, and tech enthusiasts. Learn, build, and grow
+                        together through workshops, hackathons, and collaborative projects.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#join" class="btn btn-light">
+                            Join Us <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#events" class="btn btn-outline-light">
+                            Upcoming Events
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="wave">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120">
+                    <path fill="#ffffff" fill-opacity="1"
+                        d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z">
+                    </path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">About Us</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Our Mission</h3>
+                        <p>
+                            PTSC is dedicated to fostering a collaborative environment where students can develop their programming
+                            skills, explore new technologies, and build innovative solutions to real-world problems. We believe in
+                            learning by doing and supporting each other's growth in the ever-evolving tech landscape.
+                        </p>
+                        <h3>Our Vision</h3>
+                        <p>
+                            We envision creating a thriving community of skilled developers who are prepared to make meaningful
+                            contributions to the tech industry. By providing resources, mentorship, and hands-on experience, we aim to
+                            bridge the gap between academic learning and industry requirements.
+                        </p>
+                    </div>
+
+                    <div class="about-cards">
+                        <div class="card card-purple">
+                            <div class="card-content">
+                                <i class="fas fa-code"></i>
+                                <h4>Skill Development</h4>
+                                <p>Workshops and training sessions on in-demand technologies</p>
+                            </div>
+                        </div>
+
+                        <div class="card card-indigo">
+                            <div class="card-content">
+                                <i class="fas fa-users"></i>
+                                <h4>Community</h4>
+                                <p>A supportive network of like-minded tech enthusiasts</p>
+                            </div>
+                        </div>
+
+                        <div class="card card-blue">
+                            <div class="card-content">
+                                <i class="fas fa-lightbulb"></i>
+                                <h4>Innovation</h4>
+                                <p>Encouraging creative problem-solving and new ideas</p>
+                            </div>
+                        </div>
+
+                        <div class="card card-violet">
+                            <div class="card-content">
+                                <i class="fas fa-award"></i>
+                                <h4>Recognition</h4>
+                                <p>Opportunities to showcase skills and win competitions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline">
+                    <h3>Our Journey</h3>
+                    <div class="timeline-container">
+                        <div class="timeline-line"></div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot">20</div>
+                            <div class="timeline-content">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="timeline-year">2020</div>
+                                        <h4>Club Founded</h4>
+                                        <p>Started with just 5 members and a passion for coding</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item right">
+                            <div class="timeline-dot">21</div>
+                            <div class="timeline-content">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="timeline-year">2021</div>
+                                        <h4>First Hackathon</h4>
+                                        <p>Organized our first 24-hour coding competition with 50+ participants</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot">22</div>
+                            <div class="timeline-content">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="timeline-year">2022</div>
+                                        <h4>Community Growth</h4>
+                                        <p>Expanded to 100+ members and launched our mentorship program</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item right">
+                            <div class="timeline-dot">23</div>
+                            <div class="timeline-content">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="timeline-year">2023</div>
+                                        <h4>Industry Partnerships</h4>
+                                        <p>Formed partnerships with tech companies for workshops and internships</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot">24</div>
+                            <div class="timeline-content">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="timeline-year">2024</div>
+                                        <h4>Going Global</h4>
+                                        <p>Connected with programming clubs worldwide for collaborative events</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="section">
+            <div class="container">
+                <h2 class="section-title">Our Team</h2>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://via.placeholder.com/300" alt="Alex Johnson">
+                        </div>
+                        <div class="team-info">
+                            <h3>Alex Johnson</h3>
+                            <p class="team-role">Club President</p>
+                            <p class="team-bio">Full-stack developer with a passion for AI and machine learning. Leading the club's vision and strategic initiatives.</p>
+                            <div class="team-social">
+                                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://via.placeholder.com/300" alt="Samantha Lee">
+                        </div>
+                        <div class="team-info">
+                            <h3>Samantha Lee</h3>
+                            <p class="team-role">Vice President</p>
+                            <p class="team-bio">Backend developer specializing in cloud architecture. Coordinates workshops and technical sessions.</p>
+                            <div class="team-social">
+                                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://via.placeholder.com/300" alt="Michael Chen">
+                        </div>
+                        <div class="team-info">
+                            <h3>Michael Chen</h3>
+                            <p class="team-role">Technical Lead</p>
+                            <p class="team-bio">Competitive programmer and algorithms expert. Mentors members on problem-solving and coding challenges.</p>
+                            <div class="team-social">
+                                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://via.placeholder.com/300" alt="Priya Patel">
+                        </div>
+                        <div class="team-info">
+                            <h3>Priya Patel</h3>
+                            <p class="team-role">Events Coordinator</p>
+                            <p class="team-bio">UX/UI designer with a knack for organizing engaging events. Manages hackathons and coding competitions.</p>
+                            <div class="team-social">
+                                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://via.placeholder.com/300" alt="David Wilson">
+                        </div>
+                        <div class="team-info">
+                            <h3>David Wilson</h3>
+                            <p class="team-role">Content Manager</p>
+                            <p class="team-bio">Frontend developer and technical writer. Creates learning resources and manages the club's documentation.</p>
+                            <div class="team-social">
+                                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://via.placeholder.com/300" alt="Olivia Rodriguez">
+                        </div>
+                        <div class="team-info">
+                            <h3>Olivia Rodriguez</h3>
+                            <p class="team-role">Outreach Coordinator</p>
+                            <p class="team-bio">Mobile app developer with strong communication skills. Builds partnerships with industry professionals and other clubs.</p>
+                            <div class="team-social">
+                                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Events</h2>
+                
+                <!-- Countdown Timer -->
+                <div class="countdown-card">
+                    <div class="countdown-header">
+                        <i class="fas fa-clock"></i>
+                        <h3>Countdown to Next Hackathon</h3>
+                    </div>
+                    <div class="countdown-timer">
+                        <div class="countdown-item">
+                            <div id="days" class="countdown-value">00</div>
+                            <div class="countdown-label">Days</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div id="hours" class="countdown-value">00</div>
+                            <div class="countdown-label">Hours</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div id="minutes" class="countdown-value">00</div>
+                            <div class="countdown-label">Minutes</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div id="seconds" class="countdown-value">00</div>
+                            <div class="countdown-label">Seconds</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="events-section">
+                    <h3>Upcoming Events</h3>
+                    <div class="events-grid">
+                        <div class="event-card">
+                            <div class="event-image">
+                                <img src="https://via.placeholder.com/400x200" alt="Web Development Bootcamp">
+                                <span class="event-badge upcoming">Upcoming</span>
+                            </div>
+                            <div class="event-info">
+                                <h4>Web Development Bootcamp</h4>
+                                <div class="event-details">
+                                    <div class="event-detail">
+                                        <i class="fas fa-calendar"></i>
+                                        <span>May 15, 2024</span>
+                                    </div>
+                                    <div class="event-detail">
+                                        <i class="fas fa-clock"></i>
+                                        <span>10:00 AM - 4:00 PM</span>
+                                    </div>
+                                    <div class="event-detail">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>Tech Hub, Building A</span>
+                                    </div>
+                                </div>
+                                <p>A full-day intensive workshop covering HTML, CSS, JavaScript, and React fundamentals. Perfect for beginners looking to start their web development journey.</p>
+                                <button class="btn btn-primary btn-block">Register Now</button>
+                            </div>
+                        </div>
+
+                        <div class="event-card">
+                            <div class="event-image">
+                                <img src="https://via.placeholder.com/400x200" alt="Hackathon: Code for Good">
+                                <span class="event-badge upcoming">Upcoming</span>
+                            </div>
+                            <div class="event-info">
+                                <h4>Hackathon: Code for Good</h4>
+                                <div class="event-details">
+                                    <div class="event-detail">
+                                        <i class="fas fa-calendar"></i>
+                                        <span>June 10-12, 2024</span>
+                                    </div>
+                                    <div class="event-detail">
+                                        <i class="fas fa-clock"></i>
+                                        <span>48 Hours</span>
+                                    </div>
+                                    <div class="event-detail">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>Main Campus, Innovation Center</span>
+                                    </div>
+                                </div>
+                                <p>A 48-hour hackathon focused on developing solutions for social good. Form teams and build projects addressing real-world challenges.</p>
+                                <button class="btn btn-primary btn-block">Register Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="events-section">
+                    <h3>Past Events</h3>
+                    <div class="events-grid">
+                        <div class="event-card">
+                            <div class="event-image past">
+                                <img src="https://via.placeholder.com/400x200" alt="AI & Machine Learning Workshop">
+                                <span class="event-badge past">Past</span>
+                            </div>
+                            <div class="event-info">
+                                <h4>AI & Machine Learning Workshop</h4>
+                                <div class="event-details">
+                                    <div class="event-detail">
+                                        <i class="fas fa-calendar"></i>
+                                        <span>April 5, 2024</span>
+                                    </div>
+                                    <div class="event-detail">
+                                        <i class="fas fa-clock"></i>
+                                        <span>2:00 PM - 5:00 PM</span>
+                                    </div>
+                                    <div class="event-detail">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>Online (Zoom)</span>
+                                    </div>
+                                </div>
+                                <p>Introduction to AI concepts and hands-on practice with Python libraries like TensorFlow and PyTorch. Recording available for members.</p>
+                                <button class="btn btn-outline btn-block">View Recap</button>
+                            </div>
+                        </div>
+
+                        <div class="event-card">
+                            <div class="event-image past">
+                                <img src="https://via.placeholder.com/400x200" alt="Tech Talk: Blockchain Fundamentals">
+                                <span class="event-badge past">Past</span>
+                            </div>
+                            <div class="event-info">
+                                <h4>Tech Talk: Blockchain Fundamentals</h4>
+                                <div class="event-details">
+                                    <div class="event-detail">
+                                        <i class="fas fa-calendar"></i>
+                                        <span>March 20, 2024</span>
+                                    </div>
+                                    <div class="event-detail">
+                                        <i class="fas fa-clock"></i>
+                                        <span>6:00 PM - 8:00 PM</span>
+                                    </div>
+                                    <div class="event-detail">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>Lecture Hall 3B</span>
+                                    </div>
+                                </div>
+                                <p>Guest speaker from the industry explaining blockchain technology, cryptocurrencies, and smart contracts. Q&A session included.</p>
+                                <button class="btn btn-outline btn-block">View Recap</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources" class="section">
+            <div class="container">
+                <h2 class="section-title">Learning Resources</h2>
+                
+                <div class="tabs">
+                    <div class="tabs-list">
+                        <button class="tab-button active" data-tab="web">
+                            <i class="fas fa-globe"></i>
+                            <span>Web Development</span>
+                        </button>
+                        <button class="tab-button" data-tab="mobile">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Mobile Development</span>
+                        </button>
+                        <button class="tab-button" data-tab="backend">
+                            <i class="fas fa-server"></i>
+                            <span>Backend Development</span>
+                        </button>
+                        <button class="tab-button" data-tab="data">
+                            <i class="fas fa-database"></i>
+                            <span>Data Science & AI</span>
+                        </button>
+                        <button class="tab-button" data-tab="algorithms">
+                            <i class="fas fa-code"></i>
+                            <span>Algorithms & DSA</span>
+                        </button>
+                    </div>
+                    
+                    <div class="tab-content active" id="web-content">
+                        <div class="resources-grid">
+                            <div class="resource-card">
+                                <div class="resource-header">
+                                    <h4>Frontend Fundamentals</h4>
+                                    <span class="resource-level beginner">Beginner</span>
+                                </div>
+                                <p>Comprehensive guide to HTML, CSS, and JavaScript with interactive examples.</p>
+                                <a href="#" class="resource-link">
+                                    View Resource <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="resource-card">
+                                <div class="resource-header">
+                                    <h4>React Deep Dive</h4>
+                                    <span class="resource-level intermediate">Intermediate</span>
+                                </div>
+                                <p>Advanced concepts in React including hooks, context, and performance optimization.</p>
+                                <a href="#" class="resource-link">
+                                    View Resource <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="resource-card">
+                                <div class="resource-header">
+                                    <h4>Modern CSS Techniques</h4>
+                                    <span class="resource-level intermediate">Intermediate</span>
+                                </div>
+                                <p>Learn Flexbox, Grid, animations, and responsive design patterns.</p>
+                                <a href="#" class="resource-link">
+                                    View Resource <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="resource-card">
+                                <div class="resource-header">
+                                    <h4>Full-Stack Development with Next.js</h4>
+                                    <span class="resource-level advanced">Advanced</span>
+                                </div>
+                                <p>Building end-to-end applications with Next.js, API routes, and databases.</p>
+                                <a href="#" class="resource-link">
+                                    View Resource <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="mobile-content">
+                        <div class="resources-grid">
+                            <div class="resource-card">
+                                <div class="resource-header">
+                                    <h4>React Native Essentials</h4>
+                                    <span class="resource-level beginner">Beginner</span>
+                                </div>
+                                <p>Getting started with cross-platform mobile development using React Native.</p>
+                                <a href="#" class="resource-link">
+                                    View Resource <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="resource-card">
+                                <div class="resource-header">
+                                    <h4>iOS Development with Swift</h4>
+                                    <span class="resource-level intermediate">Intermediate</span>
+                                </div>
+                                <p>Building native iOS applications with Swift and SwiftUI.</p>
+                                <a href="#" class="resource-link">
+                                    View Resource <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="resource-card">
+                                <div class="resource-header">
+                                    <h4>Android Development with Kotlin</h4>
+                                    <span class="resource-level intermediate">Intermediate</span>
+                                </div>
+                                <p>Creating Android apps using Kotlin and Jetpack Compose.</p>
+                                <a href="#" class="resource-link">
+                                    View Resource <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="resource-card">
+                                <div class="resource-header">
+                                    <h4>Mobile App Architecture</h4>
+                                    <span class="resource-level advanced">Advanced</span>
+                                </div>
+                                <p>Best practices for structuring mobile applications for scalability and maintainability.</p>
+                                <a href="#" class="resource-link">
+                                    View Resource <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="backend-content">
+                        <div class="resources-grid">
+                            <div class="resource-card">
+                                <div class="resource-header">
+                                    <h4>Node.js Fundamentals</h4>
+                                    <span class="resource-level beginner">Beginner</span>
+                                </div>
+                                <p>Building server-side applications with Node.js and Express.</p>
+                                <a href="#" class="resource-link">
+                                    View Resource <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="resource-card">
+                                <div class="resource-header">
+                                    <h4>Python Backend with FastAPI</h4>
+                                    <span class="resource-level intermediate">Intermediate</span>
+                                </div>
+                                <p>Creating high-performance APIs with Python and FastAPI.</p>
+                                <a href="#" class="resource-link">
+                                    View Resource <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="resource-card">
+                                <div class="resource-header">
+                                    <h4>Microservices Architecture</h4>
+                                    <span class="resource-level advanced">Advanced</span>
+                                </div>
+                                <p>Designing and implementing microservices-based applications.</p>
+                                <a href="#" class="resource-link">
+                                    View Resource <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="resource-card">
+                                <div class="resource-header">
+                                    <h4>GraphQL API Development</h4>
+                                    <span class="resource-level intermediate">Intermediate</span>
+                                </div>
+                                <p>Building flexible and efficient APIs using GraphQL.</p>
+                                <a href="#" class="resource-link">
+                                    View Resource <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="data-content">
+                        <div class="resources-grid">
+                            <div class="resource-card">
+                                <div class="resource-header">
+                                    <h4>Python for Data Science</h4>
+                                    <span class="resource-level beginner">Beginner</span>
+                                </div>
+                                <p>Introduction to data analysis with Python, NumPy, and Pandas.</p>
+                                <a href="#" class="resource-link">
+                                    View Resource <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="resource-card">
+                                <div class="resource-header">
+                                    <h4>Machine Learning Basics</h4>
+                                    <span class="resource-level intermediate">Intermediate</span>
+                                </div>
+                                <p>Understanding fundamental ML algorithms and their applications.</p>
+                                <a href="#" class="resource-link">
+                                    View Resource <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="resource-card">
+                                <div class="resource-header">
+                                    <h4>Deep Learning with TensorFlow</h4>
+                                    <span class="resource-level advanced">Advanced</span>
+                                </div>
+                                <p>Building neural networks for image recognition, NLP, and more.</p>
+                                <a href="#" class="resource-link">
+                                    View Resource <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="resource-card">
+                                <div class="resource-header">
+                                    <h4>Data Visualization Techniques</h4>
+                                    <span class="resource-level intermediate">Intermediate</span>
+                                </div>
+                                <p>Creating effective visualizations with Matplotlib, Seaborn, and D3.js.</p>
+                                <a href="#" class="resource-link">
+                                    View Resource <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="algorithms-content">
+                        <div class="resources-grid">
+                            <div class="resource-card">
+                                <div class="resource-header">
+                                    <h4>Data Structures Fundamentals</h4>
+                                    <span class="resource-level beginner">Beginner</span>
+                                </div>
+                                <p>Understanding arrays, linked lists, stacks, queues, and more.</p>
+                                <a href="#" class="resource-link">
+                                    View Resource <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="resource-card">
+                                <div class="resource-header">
+                                    <h4>Algorithm Design Techniques</h4>
+                                    <span class="resource-level intermediate">Intermediate</span>
+                                </div>
+                                <p>Mastering greedy algorithms, dynamic programming, and divide-and-conquer.</p>
+                                <a href="#" class="resource-link">
+                                    View Resource <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="resource-card">
+                                <div class="resource-header">
+                                    <h4>Competitive Programming Guide</h4>
+                                    <span class="resource-level advanced">Advanced</span>
+                                </div>
+                                <p>Strategies and tips for solving competitive programming challenges.</p>
+                                <a href="#" class="resource-link">
+                                    View Resource <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="resource-card">
+                                <div class="resource-header">
+                                    <h4>System Design Interview Prep</h4>
+                                    <span class="resource-level advanced">Advanced</span>
+                                </div>
+                                <p>Preparing for technical interviews with system design problems.</p>
+                                <a href="#" class="resource-link">
+                                    View Resource <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Gallery</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/600x400" alt="Hackathon 2023" class="gallery-image">
+                        <div class="gallery-caption">Annual Hackathon - Teams working on innovative solutions</div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/600x400" alt="Workshop Session" class="gallery-image">
+                        <div class="gallery-caption">React Workshop - Learning component-based architecture</div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/600x400" alt="Team Building" class="gallery-image">
+                        <div class="gallery-caption">Team building activity - Coding challenge relay</div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/600x400" alt="Guest Speaker" class="gallery-image">
+                        <div class="gallery-caption">Industry expert sharing insights on AI trends</div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/600x400" alt="Project Showcase" class="gallery-image">
+                        <div class="gallery-caption">End of semester project showcase and demo day</div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/600x400" alt="Coding Competition" class="gallery-image">
+                        <div class="gallery-caption">Members participating in a coding competition</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Lightbox -->
+            <div id="lightbox" class="lightbox">
+                <button id="close-lightbox" class="close-lightbox" aria-label="Close lightbox">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="lightbox-content">
+                    <img id="lightbox-image" src="/placeholder.svg" alt="Enlarged gallery image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="section">
+            <div class="container">
+                <h2 class="section-title">What Our Members Say</h2>
+                
+                <div class="testimonial-slider">
+                    <div class="testimonial-container">
+                        <div class="testimonial-slides">
+                            <div class="testimonial-slide active">
+                                <div class="testimonial-card">
+                                    <i class="fas fa-quote-left testimonial-quote"></i>
+                                    <p class="testimonial-text">
+                                        Joining PTSC was the best decision I made in college. The workshops helped me land my dream internship at a tech giant. The supportive community made learning complex concepts much easier!
+                                    </p>
+                                    <div class="testimonial-author">
+                                        <img src="https://via.placeholder.com/100" alt="Emily Chen" class="testimonial-image">
+                                        <div class="testimonial-info">
+                                            <h4>Emily Chen</h4>
+                                            <p>Computer Science, Junior</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="testimonial-slide">
+                                <div class="testimonial-card">
+                                    <i class="fas fa-quote-left testimonial-quote"></i>
+                                    <p class="testimonial-text">
+                                        The hackathons organized by PTSC pushed me to think outside the box and collaborate with talented peers. I've built an impressive portfolio of projects that helped me stand out to recruiters.
+                                    </p>
+                                    <div class="testimonial-author">
+                                        <img src="https://via.placeholder.com/100" alt="Marcus Johnson" class="testimonial-image">
+                                        <div class="testimonial-info">
+                                            <h4>Marcus Johnson</h4>
+                                            <p>Software Engineering, Senior</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="testimonial-slide">
+                                <div class="testimonial-card">
+                                    <i class="fas fa-quote-left testimonial-quote"></i>
+                                    <p class="testimonial-text">
+                                        As someone with no prior coding experience, I was intimidated at first. But the mentorship program at PTSC made the learning curve much less steep. Now I'm helping others get started!
+                                    </p>
+                                    <div class="testimonial-author">
+                                        <img src="https://via.placeholder.com/100" alt="Sophia Rodriguez" class="testimonial-image">
+                                        <div class="testimonial-info">
+                                            <h4>Sophia Rodriguez</h4>
+                                            <p>Data Science, Sophomore</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="testimonial-slide">
+                                <div class="testimonial-card">
+                                    <i class="fas fa-quote-left testimonial-quote"></i>
+                                    <p class="testimonial-text">
+                                        PTSC helped me bridge the gap between hardware and software. The interdisciplinary projects allowed me to apply my electrical engineering knowledge while learning valuable programming skills.
+                                    </p>
+                                    <div class="testimonial-author">
+                                        <img src="https://via.placeholder.com/100" alt="Jamal Williams" class="testimonial-image">
+                                        <div class="testimonial-info">
+                                            <h4>Jamal Williams</h4>
+                                            <p>Electrical Engineering, Senior</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-dots">
+                            <button class="testimonial-dot active" data-slide="0" aria-label="Go to testimonial 1"></button>
+                            <button class="testimonial-dot" data-slide="1" aria-label="Go to testimonial 2"></button>
+                            <button class="testimonial-dot" data-slide="2" aria-label="Go to testimonial 3"></button>
+                            <button class="testimonial-dot" data-slide="3" aria-label="Go to testimonial 4"></button>
+                        </div>
+                    </div>
+                    
+                    <button class="testimonial-nav prev" aria-label="Previous testimonial">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    
+                    <button class="testimonial-nav next" aria-label="Next testimonial">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Join Us Section -->
+        <section id="join" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Join Our Club</h2>
+                
+                <div class="join-card">
+                    <div id="join-success" class="success-message hidden">
+                        <div class="success-content">
+                            <h3>Application Submitted!</h3>
+                            <p>Thank you for applying to join PTSC. We'll review your application and get back to you within 3-5 business days.</p>
+                            <button id="new-application" class="btn btn-primary">Submit Another Application</button>
+                        </div>
+                    </div>
+                    
+                    <div id="join-form-container">
+                        <h3>Join Programming and TechSkills Club</h3>
+                        <p class="join-description">Fill out the form below to apply for membership. We welcome students of all skill levels!</p>
+                        
+                        <form id="join-form" class="join-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" class="form-control">
+                                    <span class="error-message" id="firstName-error"></span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" class="form-control">
+                                    <span class="error-message" id="lastName-error"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" class="form-control">
+                                    <span class="error-message" id="email-error"></span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="phone">Phone (Optional)</label>
+                                    <input type="tel" id="phone" name="phone" class="form-control">
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="year">Year of Study *</label>
+                                    <select id="year" name="year" class="form-control">
+                                        <option value="">Select your year</option>
+                                        <option value="freshman">Freshman</option>
+                                        <option value="sophomore">Sophomore</option>
+                                        <option value="junior">Junior</option>
+                                        <option value="senior">Senior</option>
+                                        <option value="graduate">Graduate Student</option>
+                                    </select>
+                                    <span class="error-message" id="year-error"></span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="major">Major/Field of Study *</label>
+                                    <input type="text" id="major" name="major" class="form-control">
+                                    <span class="error-message" id="major-error"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="experience">Programming Experience</label>
+                                <select id="experience" name="experience" class="form-control">
+                                    <option value="">Select your experience level</option>
+                                    <option value="beginner">Beginner (0-1 years)</option>
+                                    <option value="intermediate">Intermediate (1-3 years)</option>
+                                    <option value="advanced">Advanced (3+ years)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Areas of Interest (Select all that apply)</label>
+                                <div class="checkbox-grid">
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="webDev" name="interests" value="webDev">
+                                        <label for="webDev">Web Development</label>
+                                    </div>
+                                    
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="mobileDev" name="interests" value="mobileDev">
+                                        <label for="mobileDev">Mobile Development</label>
+                                    </div>
+                                    
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="ai" name="interests" value="ai">
+                                        <label for="ai">AI & Machine Learning</label>
+                                    </div>
+                                    
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="dataScience" name="interests" value="dataScience">
+                                        <label for="dataScience">Data Science</label>
+                                    </div>
+                                    
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="cybersecurity" name="interests" value="cybersecurity">
+                                        <label for="cybersecurity">Cybersecurity</label>
+                                    </div>
+                                    
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="gamedev" name="interests" value="gamedev">
+                                        <label for="gamedev">Game Development</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="motivation">Why do you want to join PTSC? *</label>
+                                <textarea id="motivation" name="motivation" class="form-control" rows="4" placeholder="Tell us about your interest in programming and what you hope to gain from joining our club..."></textarea>
+                                <span class="error-message" id="motivation-error"></span>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block" id="join-submit">Submit Application</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+                        <p>
+                            Have questions about our club or interested in collaborating? Fill out the form and we'll get back to you as
+                            soon as possible.
+                        </p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>
+                                        Tech Building, Room 301<br>
+                                        University Campus, 123 Innovation Street<br>
+                                        Techville, TX 75001
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>
+                                        info@PTSCclub.com<br>
+                                        president@PTSCclub.com
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>
+                                        (555) 123-4567<br>
+                                        Mon-Fri, 9:00 AM - 5:00 PM
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <div id="contact-success" class="success-message hidden">
+                            Thank you for your message! We'll get back to you soon.
+                        </div>
+                        
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="contact-name">Name</label>
+                                <input type="text" id="contact-name" name="name" class="form-control">
+                                <span class="error-message" id="contact-name-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact-email">Email</label>
+                                <input type="email" id="contact-email" name="email" class="form-control">
+                                <span class="error-message" id="contact-email-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact-message">Message</label>
+                                <textarea id="contact-message" name="message" class="form-control" rows="4"></textarea>
+                                <span class="error-message" id="contact-message-error"></span>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block" id="contact-submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="#" class="footer-logo">
+                        <i class="fas fa-code"></i>
+                        <span>PTSC</span>
+                    </a>
+                    <p>
+                        Empowering students through coding, collaboration, and creativity.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Project Gallery</a></li>
+                        <li><a href="#">Code Repository</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <address>
+                        <p>Tech Building, Room 301</p>
+                        <p>University Campus</p>
+                        <p>Techville, TX 75001</p>
+                        <p class="mt-4">info@PTSCclub.com</p>
+                        <p>(555) 123-4567</p>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> PTSC Programming Club. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
